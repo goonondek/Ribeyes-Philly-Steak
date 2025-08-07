@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about Ribeye's Philly Steak - our story, team, and commitment to serving authentic Philly cheesesteaks in Austin.">
+  <title>About Us - Ribeye's Philly Steak</title>
+  <link rel="stylesheet" href="styles.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <button class="btn btn--secondary">
+      <a href="javascript:history.back()" class="header__back-link" aria-label="Go Back">
+        <svg width="24" height="24" viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+        Back
+      </a>
+    </button>
+    <h1 class="header__title">
+      <img src="logo.png" width="100" height="50" alt="Ribeye's Philly Steak Logo">
+      <span class="visually-hidden">Ribeye's Philly Steak</span>
+    </h1>
+    <nav class="nav-bar">
+      <a href="index.html" class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+        Home
+      </a>
+      <a href="menu.html" class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        Menu
+      </a>
+      <a href="about.html" class="nav-item active">
+        <svg class="nav-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+        About
+      </a>
+      <a href="contact.html" class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+        Contact
+      </a>
+    </nav>
+    <div class="header__spacer" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1557820150-e2b260d5b5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTI2OXwwfDF8c2VhcmNofDh8fGZvb2QlMjB0cnVja3xlbnwwfHx8fDE3MTk3OTQyODF8MA&ixlib=rb-4.0.3&q=80&w=1080')">
+      <div class="hero__content">
+        <h1>Our Story, Our Passion</h1>
+        <p>Discover the journey behind Austin's best Philly cheesesteaks.</p>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="container">
+        <h2 class="text-center">The Ribeye's Team</h2>
+        <p class="text-center mt-md">Meet the dedicated individuals who bring you authentic Philly flavor every day.</p><br>
+        
+        <div class="team-grid mt-lg">
+          <div class="team-member">
+            <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Chef Michael Rodriguez, Head Grill Master" loading="lazy">
+            <h3 class="text-primary">Chef Michael Rodriguez</h3>
+            <p>Head Grill Master</p>
+            <p class="team-bio">Philadelphia native with 15 years experience perfecting the cheesesteak.</p>
+          </div>
+          <div class="team-member">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Sarah Johnson, Operations Manager" loading="lazy">
+            <h3 class="text-primary">Sarah Johnson</h3>
+            <p>Operations Manager</p>
+            <p class="team-bio">Keeps our truck running smoothly and our customers happy.</p>
+          </div>
+          <div class="team-member">
+            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="David Chen, Sous Chef" loading="lazy">
+            <h3 class="text-primary">David Chen</h3>
+            <p>Sous Chef</p>
+            <p class="team-bio">Our spice master who creates our signature sauces.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="text-center">Our Mobile Kitchen</h2>
+        <p class="text-center mt-md">We bring the Philly experience to you through our custom-built food truck.</p>
+        <div class="card" style="padding: var(--space-lg); margin-top: var(--space-lg);">
+          <img src="https://images.unsplash.com/photo-1520627778942-1e149453c076?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTI2OXwwfDF8c2VhcmNofDE4fHxmYWNhZGUlMjBvZiUyMGZvb2QlMjB0cnVja3xlbnwwfHx8fDE3MTk3OTUwNjN8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Ribeye's custom food truck with hickory wood smoker" style="border-radius: var(--radius-md); margin-bottom: var(--space-md);" loading="lazy">
+          <p class="text-center">Our 28-foot custom-built food truck features a hickory wood smoker, professional flat-top grill, and all the equipment needed to deliver authentic Philly cheesesteaks on the go. We're fully licensed and insured to serve throughout the Austin area.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div class="container">
+        <h2 class="text-center">A Message from the Owner</h2>
+        <div class="card card-owner-message" style="margin-top: var(--space-lg);">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTI2OXwwfDF8c2VhcmNofDI2fHxtYWxlJTIwcG9ydHJhaXQlMjBoYXBweXxlbnwwfHx8fDE3MTk3OTQ3MzJ8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="James Wilson, Founder of Ribeye's Philly Steak" style="width: 150px; height: 150px; object-fit: cover;" loading="lazy">
+          <h3 class="text-primary">James Wilson</h3>
+          <p>Founder & Head Chef</p>
+          <blockquote style="font-style: italic; margin-top: var(--space-md); max-width: 600px;">
+            "After moving from Philadelphia to Austin, I missed the authentic cheesesteaks from my hometown. In 2018, I decided to bring that taste to Texas using premium ribeye steak and traditional techniques. What started as a small food truck has grown into Austin's favorite Philly cheesesteak spot. Every sandwich is made with the same care I'd give to my own family."
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="text-center">Our Philosophy</h2>
+        <div class="card" style="padding: var(--space-lg); margin-top: var(--space-lg);">
+          <div class="philosophy-item">
+            <h3 class="text-primary">Quality Ingredients</h3>
+            <p>We use only USDA Prime ribeye steak, fresh Amoroso rolls imported from Philadelphia, and premium white American cheese. Our vegetables are locally sourced when possible.</p>
+          </div>
+          
+          <div class="philosophy-item">
+            <h3 class="text-primary">Authentic Techniques</h3>
+            <p>We chop our steak on the grill with onions, just like they do in Philadelphia. Our secret? A perfectly seasoned flat-top grill and the right spatula technique.</p>
+          </div>
+          
+          <div class="philosophy-item">
+            <h3 class="text-primary">Community Commitment</h3>
+            <p>We partner with local schools and charities, and we're proud to participate in Austin's vibrant food truck community. 5% of all profits go to local food banks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="text-center">© 2024 Ribeye's Philly Steak. All rights reserved.</p>
+      <p class="text-center mt-sm">Proudly serving Austin since 2018</p>
+    </div>
+  </footer>
+</body>
+</html>
