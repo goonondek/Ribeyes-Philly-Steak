@@ -4,10 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Menu - Ribeye's Philly Steak</title>
-  <link rel="stylesheet" href="styles.css"> 
+  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+ 
 </head>
+
 <body>
+  <!-- Deals Banner -->
+  <div class="deals-banner">
+    🎉 TRY OUR NEW SMOKY JALAPEÑO STEAK - LIMITED TIME ONLY! 🎉
+  </div>
+  
   <header class="header">
     <button class="btn btn--secondary">
       <a href="javascript:history.back()" class="header__back-link" aria-label="Go Back">
@@ -15,16 +22,20 @@
         Back
       </a>
     </button>
-    <h1 class="header__title">Ribeye's Philly Steak <br> <img src="logo.png" width="100" height="50" alt="Ribeye's Philly Steak Logo"></h1>
+    <h1 class="header__title">
+      <img src="logo.png" width="100" height="50" alt="Ribeye's Philly Steak Logo">
+      <span class="visually-hidden">Ribeye's Philly Steak</span>
+    </h1>
     <nav class="nav-bar">
       <a href="index.html" class="nav-item">
         <svg class="nav-icon" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
         Home
       </a>
-      <a href="menu.html" class="nav-item active"> <svg class="nav-icon" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+      <a href="menu.html" class="nav-item active">
+        <svg class="nav-icon" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
         Menu
       </a>
-      <a href="about.html" class="nav-item">
+      <a href="about.html" class="nav-item ">
         <svg class="nav-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
         About
       </a>
@@ -33,207 +44,480 @@
         Contact
       </a>
     </nav>
-    <div style="width: 24px;"></div>
+    <div class="header__spacer" aria-hidden="true"></div>
   </header>
+  
 
   <main>
-    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1604908129848-490333285141?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTI2OXwwfDF8c2VhcmNofDh8fGNoZWVzZXN0ZWFra3xlbnwwfHx8fDE3MTk3OTQzMDZ8MA&ixlib=rb-4.0.3&q=80&w=1080')">
-      <div class="hero__content">
-        <h1>Savor the Flavor</h1>
-        <p>Explore our mouth-watering selection of authentic Philly cheesesteaks and more.</p>
-      </div>
-    </section>
+  <section class="hero">
+  <div class="hero__content">
+    <h1>Savor the Flavor</h1>
+    <p>Explore our mouth-watering selection of authentic Philly cheesesteaks and more.</p>
+  </div>
+</section> 
 
-    <section class="section section--dark">
+<section class="section section--red">
+  <div class="container">
+    <h2 class="text-center">Add-ons & Combos</h2>
+    <div class="addons-grid">
+      <div class="addon-item">
+        <h3>Protein Add-ons</h3>
+        <ul>
+          <li>Extra Steak <span>+$2.00</span></li>
+          <li>Extra Chicken <span>+$2.00</span></li>
+          <li>Bacon <span>+$1.00</span></li>
+          <li>Pepperoni <span>+$1.00</span></li>
+          <li>Extra patty <span>+$1.75</span></li>
+          <li>Avocado <span>+$1.25</span></li>
+        </ul>
+      </div>
+      <div class="addon-item">
+        <h3>Make It a Combo</h3>
+        
+        <ul>
+          <li>Regular Fries & Drink Combo <span>+$3.00</span></li>
+          <li>Upgrade to Gourmet Fries <span>+$3.50</span></li>
+          <li>Upgrade to Onion Rings <span>+$3.50</span></li>
+          <li>Upgrade to Mozzarella Sticks <span>+$4.00</span></li>
+          <li>Large Drink Upgrade <span>+$3.75</span></li>
+          <li>Milkshake Substitute <span>+$5.50</span></li>
+        </ul>
+        <p class="combo-notice">Add to any sandwich or burger</p>
+       
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Signature Cheesesteaks Section -->
+    <section class="bg-image-section cheesesteaks-bg">
       <div class="container">
         <h2 class="text-center">Signature Cheesesteaks</h2>
-        <div class="menu-grid mt-lg">
-          <!-- Original Items -->
-          <div class="menu-item-card card">
-            <img src="https://images.unsplash.com/photo-1594248749323-c918c7ed6348?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTI2OXwwfDF8c2VhcmNofDN8fGNoZWVzZXN0ZWFra3xlbnwwfHx8fDE3MTk3OTQzMDZ8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Classic Philly Cheesesteak with onions and cheese">
-            <h3 class="text-primary mt-md">The Classic Philly</h3>
-            <p>Our original masterpiece: thinly sliced ribeye, sautéed onions, and creamy white American cheese on a toasted Amoroso roll.</p>
-            <p class="menu-item-price"><span class="menu-item-price-value">$12.99</span></p>
+        <div class="menu-grid">
+          <div class="menu-item-card">
+            <div class="badge-popular">MOST POPULAR</div>
+            <div class="card-content">
+              <h3>Philly cheesesteak</h3>
+              <p>Premium chopped steak, provolone, grilled onions</p>
+              <p class="menu-item-price">$8.99</p>
+            </div>
           </div>
           
-          <div class="menu-item-card card">
-            <img src="https://images.unsplash.com/photo-1627341857640-2e40232f059f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTI2OXwwfDF8c2VhcmNofDExfHxjaGVlc2VzdGVha3xlbnwwfHx8fDE3MTk3OTQzMDZ8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Spicy Jalapeño Kick Cheesesteak with peppers">
-            <h3 class="text-primary mt-md">Spicy Jalapeño Kick</h3>
-            <p>For those who like it hot! Our classic steak with grilled jalapeños, pepper jack cheese, and a hint of sriracha mayo.</p>
-            <p class="menu-item-price"><span class="menu-item-price-value">$13.99</span></p>
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Bacon 3 Cheese</h3>
+              <p>Steak with provolone, cheddar, swiss, and bacon</p>
+              <p class="menu-item-price">$11.49</p>
+            </div>
           </div>
           
-          <div class="menu-item-card card">
-            <img src="https://images.unsplash.com/photo-1627341857640-2e40232f059f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTI2OXwwfDF8c2VhcmNofDExfHxjaGVlc2VzdGVha3xlbnwwfHx8fDE3MTk3OTQzMDZ8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Mushroom Swiss Cheesesteak with mushrooms">
-            <h3 class="text-primary mt-md">Mushroom Swiss Steak</h3>
-            <p>Earthy mushrooms and savory Swiss cheese complement our tender ribeye for a rich, satisfying experience.</p>
-            <p class="menu-item-price"><span class="menu-item-price-value">$13.49</span></p>
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>The Old Ribeye</h3>
+              <p>Ex Steak, onion, Cheeze Whiz</p>
+              <p class="menu-item-price">$10.99</p>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Pizza philly</h3>
+              <p>Steak, onion, marinara, italian blend</p>
+              <p class="menu-item-price">$10.99</p>
+            </div>
           </div>
           
-          <!-- New Items -->
-          <div class="menu-item-card card">
-            <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTI2OXwwfDF8c2VhcmNofDR8fGNoZWVzZXN0ZWFrfGVufDB8fHx8MTcxOTc5NDMwNnww&ixlib=rb-4.0.3&q=80&w=1080" alt="Cheesesteak with peppers and onions">
-            <h3 class="text-primary mt-md">Philly Pepper Bomb</h3>
-            <p>Loaded with bell peppers, banana peppers, and jalapeños, topped with pepper jack cheese for a flavor explosion.</p>
-            <p class="menu-item-price"><span class="menu-item-price-value">$14.49</span></p>
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Pepperoni philly</h3>
+              <p>Steak, onion, green pepper, pepperoni, provolone</p>
+              <p class="menu-item-price">$10.99</p>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Chicken Bacon Ranch</h3>
+              <p>Grilled chicken, bacon, provolone, ranch</p>
+              <p class="menu-item-price">$10.99</p>
+            </div>
           </div>
           
-          <div class="menu-item-card card">
-            <img src="https://images.unsplash.com/photo-1604908177453-7462950a6a3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTI2OXwwfDF8c2VhcmNofDZ8fGNoZWVzZXN0ZWFrfGVufDB8fHx8MTcxOTc5NDMwNnww&ixlib=rb-4.0.3&q=80&w=1080" alt="Bacon cheesesteak">
-            <h3 class="text-primary mt-md">Bacon Cheddar Steak</h3>
-            <p>Crispy bacon, sharp cheddar, and our premium ribeye - a match made in sandwich heaven.</p>
-            <p class="menu-item-price"><span class="menu-item-price-value">$14.99</span></p>
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>BBQ Philly</h3>
+              <p>Steak, provolone,onion, jalapeños, bacon, BBQ sauce</p>
+              <p class="menu-item-price">$10.00</p>
+            </div>
           </div>
           
-          <div class="menu-item-card card">
-            <img src="https://images.unsplash.com/photo-1604908177453-7462950a6a3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTI2OXwwfDF8c2VhcmNofDZ8fGNoZWVzZXN0ZWFrfGVufDB8fHx8MTcxOTc5NDMwNnww&ixlib=rb-4.0.3&q=80&w=1080" alt="Pizza steak sandwich">
-            <h3 class="text-primary mt-md">Pizza Steak</h3>
-            <p>Our famous cheesesteak meets pizza with marinara sauce, melted mozzarella, and pepperoni.</p>
-            <p class="menu-item-price"><span class="menu-item-price-value">$14.29</span></p>
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Veggie Philly</h3>
+              <p>Portobello mushrooms, peppers, onions, provolone , swiss</p>
+              <p class="menu-item-price">$6.99</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <!-- Chicken Cheesesteaks Section -->
+     <section class="bg-image-section chicken-bg">
       <div class="container">
-        <h2 class="text-center">Chicken Sandwiches</h2>
-        <div class="menu-grid mt-lg">
-          <div class="menu-item-card card">
-            <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTI2OXwwfDF8c2VhcmNofDR8fGNoZWVzZXN0ZWFrfGVufDB8fHx8MTcxOTc5NDMwNnww&ixlib=rb-4.0.3&q=80&w=1080" alt="Chicken cheesesteak">
-            <h3 class="text-primary mt-md">Chicken Philly</h3>
-            <p>Tender grilled chicken, sautéed onions, and melted American cheese on our fresh roll.</p>
-            <p class="menu-item-price"><span class="menu-item-price-value">$11.99</span></p>
+        <h2 class="text-center">Chicken Cheesesteaks</h2>
+        <div class="menu-grid">
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Chicken Philly</h3>
+              <p>Chicken, provolone, grilled onions, mushrooms, green pepper</p>
+              <p class="menu-item-price">$7.99</p>
+            </div>
           </div>
           
-          <div class="menu-item-card card">
-            <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTI2OXwwfDF8c2VhcmNofDR8fGNoZWVzZXN0ZWFrfGVufDB8fHx8MTcxOTc5NDMwNnww&ixlib=rb-4.0.3&q=80&w=1080" alt="Buffalo chicken sandwich">
-            <h3 class="text-primary mt-md">Buffalo Chicken</h3>
-            <p>Spicy buffalo sauce, bleu cheese crumbles, and crisp lettuce on our grilled chicken.</p>
-            <p class="menu-item-price"><span class="menu-item-price-value">$12.49</span></p>
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Chicken Cali</h3>
+              <p>Chicken with provolone and ranch</p>
+              <p class="menu-item-price">$11.49</p>
+            </div>
           </div>
           
-          <div class="menu-item-card card">
-            <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTI2OXwwfDF8c2VhcmNofDR8fGNoZWVzZXN0ZWFrfGVufDB8fHx8MTcxOTc5NDMwNnww&ixlib=rb-4.0.3&q=80&w=1080" alt="BBQ chicken sandwich">
-            <h3 class="text-primary mt-md">BBQ Chicken</h3>
-            <p>Hickory-smoked BBQ sauce, cheddar cheese, and crispy onions on grilled chicken.</p>
-            <p class="menu-item-price"><span class="menu-item-price-value">$12.49</span></p>
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Chicken Bacon Chipotle</h3>
+              <p>Grilled chicken, onion, bacon, provolone, chipotle</p>
+              <p class="menu-item-price">$10.99</p>
+            </div>
+          </div>
+          
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Chicken Buffalo</h3>
+              <p>Chicken, onion, provolone, jalapeños, buffalo, banana pepper</p>
+              <p class="menu-item-price">$10.49</p>
+            </div>
+          </div>
+          
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Chicken Teriyaki</h3>
+              <p>Chicken, Swiss cheese, onions, and teriyaki</p>
+              <p class="menu-item-price">$10.99</p>
+            </div>
+          </div>
+          
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Lemon Pepper Chicken</h3>
+              <p>Chicken, provolone, onion, and lemon pepper</p>
+              <p class="menu-item-price">$10.00</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--dark">
+    <!-- Gourmet Burgers Section -->
+    <section class="bg-image-section burgers-bg">
       <div class="container">
-        <h2 class="text-center">Veggie Options</h2>
-        <div class="menu-grid mt-lg">
-          <div class="menu-item-card card">
-            <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTI2OXwwfDF8c2VhcmNofDR8fGNoZWVzZXN0ZWFrfGVufDB8fHx8MTcxOTc5NDMwNnww&ixlib=rb-4.0.3&q=80&w=1080" alt="Veggie cheesesteak">
-            <h3 class="text-primary mt-md">Veggie Philly</h3>
-            <p>Portobello mushrooms, bell peppers, onions, and provone cheese with our special sauce.</p>
-            <p class="menu-item-price"><span class="menu-item-price-value">$10.99</span></p>
+        <h2 class="text-center">Gourmet Burgers</h2>
+        <div class="menu-grid">
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Classic Cheeseburger</h3>
+              <p>Steak, American yellow cheese</p>
+              <p class="menu-item-price">$6.99</p>
+            </div>
+          </div>
+
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Bacon Cheeseburger</h3>
+              <p>1/2 lb patty, cheddar, bacon, BBQ sauce</p>
+              <p class="menu-item-price">$7.99</p>
+            </div>
           </div>
           
-          <div class="menu-item-card card">
-            <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTI2OXwwfDF8c2VhcmNofDR8fGNoZWVzZXN0ZWFrfGVufDB8fHx8MTcxOTc5NDMwNnww&ixlib=rb-4.0.3&q=80&w=1080" alt="Impossible cheesesteak">
-            <h3 class="text-primary mt-md">Impossible™ Steak</h3>
-            <p>Plant-based Impossible meat with all the classic Philly fixings - tastes amazingly real!</p>
-            <p class="menu-item-price"><span class="menu-item-price-value">$13.99</span></p>
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Hawaiian Burger</h3>
+              <p>Beef, American yellow cheese, ham, pineapple, and bacon</p>
+              <p class="menu-item-price">$8.99</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <!-- Wings Section (Restored as in original) -->
+    <section class="bg-image-section wings-bg">
       <div class="container">
-        <h2 class="text-center">Sides</h2>
-        <div class="card menu-category-card" style="margin-top: var(--space-lg);">
-          <div class="menu-item">
-            <h3 class="text-primary">Crispy Fries</h3>
-            <p>Perfectly golden and seasoned, a classic companion to any cheesesteak.</p>
-            <p class="menu-item-price"><span class="menu-item-price-value">$3.99</span></p>
+        <div class="wings-header">
+          <h2>Wings & Boneless</h2>
+          <p class="wings-subtitle">Crispy, juicy, and full of flavor</p>
+        </div>
+        
+        <div class="menu-grid">
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Bone-In Wings</h3>
+              <p>Traditional chicken wings, crispy fried to perfection</p>
+              <p class="menu-item-price">6 for $7.99 | 12 for $13.99 | 18 for $19.99</p>
+            </div>
           </div>
           
-          <div class="menu-item mt-md">
-            <h3 class="text-primary">Smoked Mac & Cheese</h3>
-            <p>Our creamy, cheesy mac & cheese infused with a subtle smoky flavor.</p>
-            <p class="menu-item-price"><span class="menu-item-price-value">$5.49</span></p>
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Boneless Wings</h3>
+              <p>Tender chicken breast chunks, breaded and fried</p>
+              <p class="menu-item-price">6 for $8.49 | 12 for $14.99 | 18 for $21.99</p>
+            </div>
           </div>
-          
-          <div class="menu-item mt-md">
-            <h3 class="text-primary">Onion Rings</h3>
-            <p>Beer-battered and crispy, served with ranch dressing.</p>
-            <p class="menu-item-price"><span class="menu-item-price-value">$4.99</span></p>
+        </div>
+        
+        <div class="sauces-container">
+          <h3 class="sauces-title">Signature Sauces</h3>
+          <div class="sauces-grid">
+            <div class="sauce-item">Buffalo</div>
+            <div class="sauce-item">BBQ</div>
+            <div class="sauce-item">Cajun</div>
+            <div class="sauce-item">Lemon Pepper</div>
+            <div class="sauce-item">Teriyaki</div>
+            <div class="sauce-item">Korean</div>
+            <div class="sauce-item">Garlic Parm</div>
+            <div class="sauce-item">Mango Habanero</div>
           </div>
-          
-          <div class="menu-item mt-md">
-            <h3 class="text-primary">Cheese Fries</h3>
-            <p>Our famous fries smothered in melted cheese and bacon bits.</p>
-            <p class="menu-item-price"><span class="menu-item-price-value">$6.99</span></p>
-          </div>
-          
-          <div class="menu-item mt-md">
-            <h3 class="text-primary">Side Salad</h3>
-            <p>Fresh mixed greens with cherry tomatoes, cucumbers, and your choice of dressing.</p>
-            <p class="menu-item-price"><span class="menu-item-price-value">$4.49</span></p>
+        </div>
+        
+        <div class="add-ons">
+          <h3 class="add-ons-title">Dipping Sauces & Sides</h3>
+          <div class="add-ons-grid">
+            <div class="add-on-item">
+              <h4>Blue Cheese</h4>
+              <p>Creamy, tangy blue cheese dressing</p>
+              <p class="add-on-price">$1.49</p>
+            </div>
+            <div class="add-on-item">
+              <h4>Ranch</h4>
+              <p>Cool and creamy buttermilk ranch</p>
+              <p class="add-on-price">$1.49</p>
+            </div>
+            <div class="add-on-item">
+              <h4>Fresh Celery Sticks</h4>
+              <p>Crunchy, fresh celery served chilled</p>
+              <p class="add-on-price">$1.99</p>
+            </div>
+            <div class="add-on-item">
+              <h4>Carrot Sticks</h4>
+              <p>Fresh carrot sticks, perfect for dipping</p>
+              <p class="add-on-price">$1.99</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--dark">
+    <!-- Gourmet Fries Section -->
+    <section class="bg-image-section fries-bg">
       <div class="container">
-        <h2 class="text-center">Drinks</h2>
-        <div class="card menu-category-card" style="margin-top: var(--space-lg);">
-          <div class="menu-item">
-            <h3 class="text-primary">Soft Drinks</h3>
-            <p>Coca-Cola, Diet Coke, Sprite, Dr. Pepper, Sweet Tea</p>
-            <p class="menu-item-price"><span class="menu-item-price-value">$2.50</span></p>
+        <h2 class="text-center">Gourmet Fries</h2>
+        <div class="menu-grid">
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Cheese Fries</h3>
+              <p>Golden fries with cheddar cheese sauce</p>
+              <p class="menu-item-price">$2.99</p>
+            </div>
           </div>
           
-          <div class="menu-item mt-md">
-            <h3 class="text-primary">Aguas Frescas</h3>
-            <p>Tamarindo or Flor de Jamaica (hibiscus)</p>
-            <p class="menu-item-price"><span class="menu-item-price-value">$3.00</span></p>
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Philly Fries</h3>
+              <p>Fries topped with steak, cheese, onions</p>
+              <p class="menu-item-price">$4.99 (no large)</p>
+            </div>
           </div>
           
-          <div class="menu-item mt-md">
-            <h3 class="text-primary">Bottled Water</h3>
-            <p>16oz purified bottled water</p>
-            <p class="menu-item-price"><span class="menu-item-price-value">$1.50</span></p>
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Bacon Cheese Fries</h3>
+              <p>Fries with cheese sauce and bacon</p>
+              <p class="menu-item-price">$2.99</p>
+            </div>
           </div>
           
-          <div class="menu-item mt-md">
-            <h3 class="text-primary">Craft Beer</h3>
-            <p>Selection of local craft beers (ask server for current options)</p>
-            <p class="menu-item-price"><span class="menu-item-price-value">$5.50</span></p>
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Chili Cheese Fries</h3>
+              <p>Fries topped with chili and cheese</p>
+              <p class="menu-item-price">$2.99</p>
+            </div>
+          </div>
+          
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Gourmet Fries</h3>
+              <p>Cheese, bacon, and ranch</p>
+              <p class="menu-item-price">$2.99</p>
+            </div>
+          </div>
+          
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Regular Fries</h3>
+              <p>Crispy fries</p>
+              <p class="menu-item-price">$1.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <!-- Drinks Section with Background Image -->
+    <section class="bg-image-section drinks-bg">
+      <div class="container">
+        <h2 class="text-center">Refreshing Drinks</h2>
+        <div class="menu-grid">
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Lemonade</h3>
+              <p>Original fresh lemonade</p>
+              <p class="menu-item-price">$1.99</p>
+            </div>
+          </div>
+          
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Fruit Lemonade</h3>
+              <p>Strawberry, peach, mango</p>
+              <p class="menu-item-price">$2.49</p>
+            </div>
+          </div>
+          
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Milkshake</h3>
+              <p>Creamy vanilla, Cookies and cream, Chocolate</p>
+              <p class="menu-item-price">$4.99</p>
+            </div>
+          </div>
+          
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Fountain Drinks</h3>
+              <p>Coke products</p>
+              <p class="menu-item-price">$2.39</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <!-- Desserts Section with Background Image -->
+    <section class="bg-image-section desserts-bg">
       <div class="container">
-        <h2 class="text-center">Desserts</h2>
-        <div class="card menu-category-card" style="margin-top: var(--space-lg);">
-          <div class="menu-item">
-            <h3 class="text-primary">Philly Cheesecake</h3>
-            <p>Classic New York-style cheesecake with your choice of topping (strawberry, chocolate, or caramel).</p>
-            <p class="menu-item-price"><span class="menu-item-price-value">$5.99</span></p>
+        <h2 class="text-center">Sides & Desserts</h2>
+        <div class="menu-grid">
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Sundae</h3>
+              <p>Chocolate, strawberry</p>
+              <p class="menu-item-price">$4.99</p>
+            </div>
           </div>
           
-          <div class="menu-item mt-md">
-            <h3 class="text-primary">Chocolate Chip Cookie</h3>
-            <p>Warm, gooey chocolate chip cookie served with vanilla ice cream.</p>
-            <p class="menu-item-price"><span class="menu-item-price-value">$4.99</span></p>
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Ice Cream Cone</h3>
+              <p>Classic vanilla soft serve</p>
+              <p class="menu-item-price">$1.00</p>
+            </div>
           </div>
           
-          <div class="menu-item mt-md">
-            <h3 class="text-primary">Cannoli</h3>
-            <p>Traditional Italian pastry filled with sweet ricotta cream.</p>
-            <p class="menu-item-price"><span class="menu-item-price-value">$3.99</span></p>
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Onion Rings</h3>
+              <p>4 crispy onion rings</p>
+              <p class="menu-item-price">$2.99</p>
+            </div>
+          </div>
+          
+          <div class="menu-item-card">
+            <div class="card-content">
+              <h3>Mozzarella Sticks</h3>
+              <p>4 golden mozzarella sticks</p>
+              <p class="menu-item-price">$3.99</p>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Size Upgrade Tab (Restored as in original) -->
+    <section class="pricing-footer">
+      <div class="container">
+        <!-- Simple Notice Bar -->
+        <div class="size-notice">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="#c00">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+          </svg>
+          <p>All prices shown are for <strong>regular size</strong>. Upgrade options available.</p>
+        </div>
+
+        <!-- Expandable Upgrade Panel -->
+        <details class="upgrade-details">
+          <summary>
+            <span>See size upgrade prices</span>
+            <svg class="dropdown-icon" width="16" height="16" viewBox="0 0 24 24">
+              <path d="M7 10l5 5 5-5z"/>
+            </svg>
+          </summary>
+          
+          <div class="upgrade-grid">
+            <div class="upgrade-category">
+              <h4>Steak Cheesesteaks</h4>
+              <ul>
+                <li>Small <span>$7.99</span></li>
+                <li>Regular <span>Menu Price</span></li>
+                <li>Large <span>+ $3.00</span></li>
+              </ul>
+            </div>
+            
+            <div class="upgrade-category">
+              <h4>Chicken Cheesesteaks</h4>
+              <ul>
+                <li>Small <span>$6.99</span></li>
+                <li>Regular <span>Menu Price</span></li>
+                <li>Large <span>+ $3.00</span></li>
+              </ul>
+            </div>
+            
+            <div class="upgrade-category">
+              <h4>Burgers</h4>
+              <ul>
+                <li>Regular <span>Menu Price</span></li>
+                <li>Large <span>+ $1.00</span></li>
+              </ul>
+            </div>
+            
+            <div class="upgrade-category">
+              <h4>Fries</h4>
+              <ul>
+                <li>Regular <span>Menu Price</span></li>
+                <li>Large <span>+ $1.00</span></li>
+              </ul>
+            </div>
+            
+            <div class="upgrade-category">
+              <h4>Drinks</h4>
+              <ul>
+                <li>Regular <span>Menu Price</span></li>
+                <li>Large <span>+ $0.75</span></li>
+              </ul>
+            </div>
+          </div>
+        </details>
       </div>
     </section>
   </main>
