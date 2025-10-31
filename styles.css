@@ -351,9 +351,16 @@ footer {
   padding: var(--space-sm);
   font-weight: bold;
   font-size: 1.1rem;
-  position: sticky;
-  top: 80px;
-  z-index: 90;
+  /* No position: sticky */
+  z-index: 1; /* Lower z-index */
+}
+
+@media (max-width: 768px) {
+  .deals-banner {
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+    position: relative;
+  }
 }
 .section--dark .card {
   color: var(--dark); /* keep normal text readable on white background */
@@ -832,4 +839,44 @@ footer {
   justify-content: space-between;
   padding: var(--space-xs) 0;
   border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+}
+/* Ultra compact mobile nav */
+@media (max-width: 768px) {
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.25rem;
+    padding: 0.25rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+  }
+  
+  .nav-item {
+    flex: 1;
+    min-height: 40px;
+    padding: 0.4rem 0.25rem;
+    font-size: 0.7rem;
+    min-width: auto;
+    max-width: none;
+  }
+  
+  .nav-icon {
+    width: 14px;
+    height: 14px;
+    margin-bottom: 0.1rem;
+  }
+  
+  .header {
+    padding: 0.75rem var(--space-sm);
+  }
+  
+  .header__title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .header__title img {
+    height: 30px;
+    width: 30px;
+  }
 }
