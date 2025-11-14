@@ -8,6 +8,11 @@
   --gray: #ddd;
   --white: #fff;
   
+  /* Additional variables for consistency */
+  --primary-color: #d00; /* Alias for compatibility */
+  --light-color: #dbc5c5; /* Alias for compatibility */
+  --dark-color: #222; /* Alias for compatibility */
+  
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
@@ -220,6 +225,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: var(--space-md);
+  margin-top: var(--space-lg);
 }
 
 .social-links {
@@ -564,7 +570,7 @@ footer {
   background-image: url("images/desserts.jpg");
 }
 
-/* ===== MENU SPECIFIC STYLES ===== */
+/* ===== MENU ITEM CARDS ===== */
 .menu-item-card {
   background: var(--white);
   border-radius: var(--border-radius);
@@ -635,48 +641,89 @@ footer {
   border-bottom: 1px dotted rgba(255,255,255,0.2);
 }
 
+/* ===== WINGS SECTION SPECIFIC STYLES ===== */
 .wings-header {
-  text-align: center;
+  text-align: text-center;
   margin-bottom: var(--space-lg);
 }
 
 .wings-subtitle {
   font-style: italic;
   opacity: 0.8;
+  font-size: 1.25rem;
+  margin-top: var(--space-sm);
+}
+
+.wings-pricing {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+
+.wing-size {
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+  padding: var(--space-sm);
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.wing-size-label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: var(--space-xs);
+}
+
+.wing-size-price {
+  font-size: 1.1rem;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.wing-includes {
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: var(--space-xs);
 }
 
 .sauces-container {
-  margin: var(--space-lg) 0;
+  margin-top: var(--space-xl);
 }
 
 .sauces-title {
   text-align: center;
   margin-bottom: var(--space-md);
-  color: var(--primary);
+  font-size: 1.5rem;
+  color: var(--white);
 }
 
 .sauces-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: var(--space-sm);
   text-align: center;
 }
 
 .sauce-item {
-  background: #f0f0f0;
+  background-color: var(--white);
   padding: var(--space-sm);
+  text-align: center;
   border-radius: 4px;
   font-weight: bold;
+  color: var(--dark);
 }
 
 .add-ons {
-  margin: var(--space-lg) 0;
+  margin-top: var(--space-xl);
 }
 
 .add-ons-title {
   text-align: center;
   margin-bottom: var(--space-md);
-  color: var(--primary);
+  font-size: 1.5rem;
+  color: var(--white);
 }
 
 .add-ons-grid {
@@ -686,10 +733,11 @@ footer {
 }
 
 .add-on-item {
-  background: #f7f7f7;
+  background-color: var(--white);
   padding: var(--space-md);
-  border-radius: var(--border-radius);
+  border-radius: 8px;
   text-align: center;
+  color: var(--dark);
 }
 
 .add-on-item h4 {
@@ -902,6 +950,14 @@ footer {
   
   .ingredient {
     max-width: 150px;
+  }
+  
+  .wings-pricing {
+    flex-direction: column;
+  }
+  
+  .wing-size {
+    min-width: auto;
   }
 }
 
